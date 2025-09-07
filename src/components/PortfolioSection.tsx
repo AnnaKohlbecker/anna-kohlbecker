@@ -87,12 +87,6 @@ const PortfolioSection = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            View All Projects
-          </Button>
-        </div>
       </div>
     </section>
   );
