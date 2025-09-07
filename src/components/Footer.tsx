@@ -8,9 +8,6 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-lg">A</span>
-              </div>
               <span className="text-xl font-bold">Anna Kohlbecker</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">

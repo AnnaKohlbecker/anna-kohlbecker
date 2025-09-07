@@ -11,9 +11,6 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center mr-2">
-              <span className="text-white font-bold">A</span>
-            </div>
             <span className="text-xl font-bold">Anna</span>
           </div>
 
