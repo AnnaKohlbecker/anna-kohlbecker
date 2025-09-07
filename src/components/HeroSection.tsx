@@ -53,17 +53,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Company Logos */}
-        <div className="mt-20 pt-12 border-t border-border">
-          <p className="text-center text-muted-foreground mb-8">Trusted by leading companies</p>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
-            <div className="text-2xl font-bold">Google</div>
-            <div className="text-2xl font-bold">Microsoft</div>
-            <div className="text-2xl font-bold">Apple</div>
-            <div className="text-2xl font-bold">Meta</div>
-            <div className="text-2xl font-bold">Amazon</div>
-          </div>
-        </div>
       </div>
     </section>
   );
