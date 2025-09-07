@@ -12,7 +12,7 @@ const HeroSection = () => {
               <h1 className="text-5xl lg:text-6xl font-bold">
                 I'm <span className="bg-gradient-primary bg-clip-text text-transparent">Anna Kohlbecker</span>
                 <br />
-                <span className="text-muted-foreground font-thin">Entrepreneur & Developer</span>
+                <span className="text-muted-foreground font-thin text-3xl lg:text-4xl">Entrepreneur & Developer</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
                 Creating beautiful and functional digital experiences with modern development technologies and best practices.
