@@ -1,0 +1,76 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Download } from "lucide-react";
+import heroPortrait from "@/assets/hero-portrait.jpg";
+
+const HeroSection = () => {
+  return (
+    <section className="min-h-screen bg-gradient-hero relative overflow-hidden">
+      <div className="container mx-auto px-6 py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl lg:text-6xl font-bold">
+                I'm <span className="bg-gradient-primary bg-clip-text text-transparent">Alex Johnson</span>
+                <br />
+                <span className="text-muted-foreground">UI/UX Designer</span>
+              </h1>
+              <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
+                Creating beautiful and functional digital experiences with modern design principles and user-centered approach.
+              </p>
+            </div>
+            
+            <div className="flex flex-wrap gap-4">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                Hire Me <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+              </Button>
+            </div>
+
+            <div className="flex items-center gap-8 pt-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-sm text-muted-foreground">Projects</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary">5+</div>
+                <div className="text-sm text-muted-foreground">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary">100%</div>
+                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
+              <img 
+                src={heroPortrait} 
+                alt="Alex Johnson - UI/UX Designer" 
+                className="relative rounded-2xl shadow-card object-cover w-full max-w-md mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Company Logos */}
+        <div className="mt-20 pt-12 border-t border-border">
+          <p className="text-center text-muted-foreground mb-8">Trusted by leading companies</p>
+          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
+            <div className="text-2xl font-bold">Google</div>
+            <div className="text-2xl font-bold">Microsoft</div>
+            <div className="text-2xl font-bold">Apple</div>
+            <div className="text-2xl font-bold">Meta</div>
+            <div className="text-2xl font-bold">Amazon</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
