@@ -27,19 +27,19 @@ const WhyHireMeSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
-            <img 
+              <img 
               src={heroPortrait} 
-              alt="Why hire Anna Kohlbecker" 
+              alt="Why contact Anna Kohlbecker" 
               className="relative rounded-2xl shadow-card object-cover w-full max-w-md mx-auto"
             />
           </div>
 
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl font-bold mb-6">
-                Why Hire Me For <br />
-                <span className="bg-gradient-primary bg-clip-text text-transparent">Your Project?</span>
-              </h2>
+            <h2 className="text-4xl font-bold mb-6">
+              Why Contact Me For <br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Your Project?</span>
+            </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                 I bring creativity, technical expertise, and a passion for creating exceptional user experiences 
                 that drive results and exceed expectations.

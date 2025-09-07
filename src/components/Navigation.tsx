@@ -41,7 +41,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Hire Me
+              Contact
             </Button>
           </div>
 
@@ -69,7 +69,7 @@ const Navigation = () => {
                 </a>
               ))}
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-fit">
-                Hire Me
+                Contact
               </Button>
             </div>
           </div>
