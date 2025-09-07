@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 const PricingSection = () => {
   return (
@@ -11,12 +11,12 @@ const PricingSection = () => {
           </h2>
         </div>
 
-        <div className="max-w-md mx-auto">
+        <div className="max-w-2xl mx-auto">
           <div className="space-y-4">
-            <Input 
-              type="text" 
+            <Textarea 
               placeholder="Your message..." 
-              className="w-full"
+              className="w-full min-h-[120px] resize-none"
+              rows={5}
             />
             <Button 
               className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
