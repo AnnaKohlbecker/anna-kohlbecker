@@ -10,7 +10,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold">
-                I'm <span className="bg-gradient-primary bg-clip-text text-transparent">Anna Kohlbecker</span>
+                <span className="bg-gradient-primary bg-clip-text text-transparent">Anna Kohlbecker</span>
                 <br />
                 <span className="text-muted-foreground font-thin text-3xl lg:text-4xl">Entrepreneur & Developer</span>
               </h1>
