@@ -12,10 +12,10 @@ const HeroSection = () => {
               <h1 className="text-5xl lg:text-6xl font-bold">
                 I'm <span className="bg-gradient-primary bg-clip-text text-transparent">Anna Kohlbecker</span>
                 <br />
-                <span className="text-muted-foreground">UI/UX Designer</span>
+                <span className="text-muted-foreground">Developer</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-                Creating beautiful and functional digital experiences with modern design principles and user-centered approach.
+                Creating beautiful and functional digital experiences with modern development technologies and best practices.
               </p>
             </div>
             
@@ -46,7 +46,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
               <img 
                 src={heroPortrait} 
-                alt="Anna Kohlbecker - UI/UX Designer" 
+                alt="Anna Kohlbecker - Developer" 
                 className="relative rounded-2xl shadow-card object-cover w-full max-w-md mx-auto"
               />
             </div>
