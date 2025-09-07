@@ -10,7 +10,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold">
-                I'm <span className="bg-gradient-primary bg-clip-text text-transparent">Alex Johnson</span>
+                I'm <span className="bg-gradient-primary bg-clip-text text-transparent">Anna Kohlbecker</span>
                 <br />
                 <span className="text-muted-foreground">UI/UX Designer</span>
               </h1>
@@ -50,7 +50,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
               <img 
                 src={heroPortrait} 
-                alt="Alex Johnson - UI/UX Designer" 
+                alt="Anna Kohlbecker - UI/UX Designer" 
                 className="relative rounded-2xl shadow-card object-cover w-full max-w-md mx-auto"
               />
             </div>

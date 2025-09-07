@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center mr-3">
                 <span className="text-white font-bold text-lg">A</span>
               </div>
-              <span className="text-xl font-bold">Alex Johnson</span>
+              <span className="text-xl font-bold">Anna Kohlbecker</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               Creating beautiful and functional digital experiences with modern design principles. 
@@ -48,7 +48,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>alex@example.com</li>
+              <li>anna@example.com</li>
               <li>+1 (555) 123-4567</li>
               <li>San Francisco, CA</li>
             </ul>
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+          <p>&copy; 2024 Anna Kohlbecker. All rights reserved.</p>
         </div>
       </div>
     </footer>

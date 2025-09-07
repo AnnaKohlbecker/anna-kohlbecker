@@ -29,7 +29,7 @@ const WhyHireMeSection = () => {
             <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
             <img 
               src={heroPortrait} 
-              alt="Why hire Alex Johnson" 
+              alt="Why hire Anna Kohlbecker" 
               className="relative rounded-2xl shadow-card object-cover w-full max-w-md mx-auto"
             />
           </div>
