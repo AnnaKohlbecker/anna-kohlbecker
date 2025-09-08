@@ -40,7 +40,7 @@ const HeroSection = () => {
 
           <div className="relative">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-xl opacity-15"></div>
+              <div className="absolute -inset-4 bg-gradient-primary rounded-2xl blur-md opacity-20"></div>
               <img 
                 src={heroPortrait} 
                 alt="Anna Kohlbecker - Developer" 
