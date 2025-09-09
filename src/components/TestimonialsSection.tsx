@@ -6,20 +6,19 @@ const TestimonialsSection = () => {
       name: "Sarah Johnson",
       role: "CEO, TechStart",
       rating: 5,
-      text: "Alex delivered exceptional design work that exceeded our expectations. The attention to detail and user experience was outstanding."
+      text: "..."
     },
     {
       name: "Michael Chen",
       role: "Product Manager, Innovate Co",
       rating: 5,
-      text: "Working with Alex was a pleasure. Professional, creative, and always delivered on time. Our conversion rate improved by 40%."
+      text: "..."
     },
     {
       name: "Emma Davis",
       role: "Founder, StartupX",
       rating: 5,
-      text: "The best designer I've worked with. Alex understood our vision and created something even better than we imagined."
-    }
+      text: "..."
   ];
 
   return (
