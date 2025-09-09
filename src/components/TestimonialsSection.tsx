@@ -29,9 +29,6 @@ const TestimonialsSection = () => {
           <h2 className="text-4xl font-bold mb-4">
             This Is Why I Do What <span className="bg-gradient-primary bg-clip-text text-transparent">I Do</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Don't just take my word for it. Here's what my clients say about working with me.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
