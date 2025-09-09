@@ -17,7 +17,6 @@ const Footer = () => {
               <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} />
               <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} />
               <SocialIcon url="https://x.com" style={{ height: 40, width: 40 }} />
-              <SocialIcon url="mailto:contact@example.com" style={{ height: 40, width: 40 }} />
             </div>
           </div>
         </div>
