@@ -44,7 +44,7 @@ const HeroSection = () => {
               <img 
                 src={heroPortrait} 
                 alt="Anna Kohlbecker - Developer" 
-                className="relative rounded-2xl shadow-card object-cover w-full max-w-md mx-auto"
+                className="relative rounded-2xl object-cover w-full max-w-md mx-auto"
               />
             </div>
           </div>
