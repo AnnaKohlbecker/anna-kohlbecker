@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
       name: "Michael Chen",
       role: "Product Manager, Innovate Co",
       rating: 5,
-      text: "Working with Alex was a pleasure. Professional, creative, and always delivered on time. Our conversion rate improved by 40%."
+      text: "..."
     },
     {
       name: "Emma Davis",
