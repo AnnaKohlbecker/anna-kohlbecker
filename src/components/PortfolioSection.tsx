@@ -7,40 +7,22 @@ import project3 from "@/assets/project-3.jpg";
 const PortfolioSection = () => {
   const projects = [
     {
-      title: "Dashboard Analytics App",
+      title: "Event Location Renting Website",
       category: "Web Application",
       image: project1,
-      description: "Modern dashboard with real-time analytics and beautiful data visualizations."
+      description: "A peer-to-peer marketplace for event location rentals."
     },
     {
-      title: "E-commerce Mobile App",
-      category: "Mobile Design",
+      title: "...",
+      category: "Web Application",
       image: project2,
-      description: "Complete mobile shopping experience with intuitive navigation and checkout."
+      description: "..."
     },
     {
-      title: "SaaS Landing Page",
-      category: "Web Design",
+      title: "...",
+      category: "Web Application",
       image: project3,
-      description: "High-converting landing page design for a B2B SaaS product."
-    },
-    {
-      title: "Brand Identity Design",
-      category: "Branding",
-      image: project1,
-      description: "Complete brand identity including logo, colors, and style guide."
-    },
-    {
-      title: "Banking App Interface",
-      category: "UI/UX Design",
-      image: project2,
-      description: "Secure and user-friendly banking application interface design."
-    },
-    {
-      title: "Fashion Website Design",
-      category: "E-commerce",
-      image: project3,
-      description: "Elegant fashion e-commerce website with modern shopping experience."
+      description: "..."
     }
   ];
 
