@@ -29,10 +29,6 @@ const WhyHireMeSection = () => {
             Why Contact Me For <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">Your Project?</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            I bring creativity, technical expertise, and a passion for creating exceptional user experiences 
-            that drive results and exceed expectations.
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
