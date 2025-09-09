@@ -73,9 +73,6 @@ const PortfolioSection = () => {
                     <Button size="sm" className="bg-black text-white hover:bg-black/80">
                       <ExternalLink className="h-4 w-4" />
                     </Button>
-                    <Button size="sm" className="bg-black text-white hover:bg-black/80">
-                      <Github className="h-4 w-4" />
-                    </Button>
                   </div>
                 </div>
               </div>
