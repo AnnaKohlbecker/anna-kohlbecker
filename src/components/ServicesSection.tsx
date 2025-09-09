@@ -4,18 +4,18 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Palette,
-      title: "Design",
-      description: "Creating beautiful and intuitive user interfaces with modern design principles and attention to detail."
+      title: "Digital Marketing",
+      description: "Attract more customers and grow revenue with strategies that deliver measurable results."
     },
     {
       icon: Monitor,
-      title: "UI/UX",
-      description: "Designing user experiences that are both functional and delightful, focusing on usability and conversion."
+      title: "Web Design & Development",
+      description: "Turning ideas into fast, user-friendly websites and apps that convert visitors into loyal customers."
     },
     {
       icon: Zap,
-      title: "Branding",
-      description: "Developing strong brand identities that connect with your audience and stand out in the market."
+      title: "AI & Automation Solutions",
+      description: "Saving time and money by automating repetitive tasks and creating smarter workflows."
     }
   ];
 
@@ -24,11 +24,8 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            My Awesome <span className="bg-gradient-primary bg-clip-text text-transparent">Services</span>
+            Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            I offer comprehensive design solutions to help your business grow and succeed in the digital world.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

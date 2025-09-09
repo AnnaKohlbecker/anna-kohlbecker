@@ -49,11 +49,8 @@ const PortfolioSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            My Latest <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+            Latest <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Here are some of my recent works that showcase my skills and creativity in digital design.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
