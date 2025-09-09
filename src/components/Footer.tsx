@@ -1,4 +1,4 @@
-import { Github, Linkedin, X, Mail } from "lucide-react";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
@@ -14,18 +14,10 @@ const Footer = () => {
               Let's build something amazing together.
             </p>
             <div className="flex justify-center space-x-4">
-              <a href="https://github.com/AnnaKohlbecker" className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                <Github className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                <X className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                <Mail className="h-5 w-5" />
-              </a>
+              <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} />
+              <SocialIcon url="https://linkedin.com" style={{ height: 40, width: 40 }} />
+              <SocialIcon url="https://twitter.com" style={{ height: 40, width: 40 }} />
+              <SocialIcon url="mailto:contact@example.com" style={{ height: 40, width: 40 }} />
             </div>
           </div>
         </div>
