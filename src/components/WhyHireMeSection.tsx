@@ -6,18 +6,18 @@ const WhyHireMeSection = () => {
   const benefits = [
     {
       icon: Award,
-      title: "5+ Years Experience",
-      description: "Proven track record with 50+ successful projects across various industries."
+      title: "3+ Years Experience",
+      description: "Proven track record with 15+ successful projects."
     },
     {
       icon: Clock,
       title: "Fast Delivery",
-      description: "Quick turnaround times without compromising on quality or attention to detail."
+      description: "Quick turnaround times without compromising on quality."
     },
     {
       icon: Users,
       title: "100% Client Satisfaction",
-      description: "All my clients are happy with the results and many return for additional projects."
+      description: "All my clients are happy with the results."
     }
   ];
 
