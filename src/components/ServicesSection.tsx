@@ -1,19 +1,19 @@
-import { Palette, Monitor, Zap } from "lucide-react";
+import { Megaphone, Monitor, Bot } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Palette,
+      icon: Megaphone,
       title: "Digital Marketing",
       description: "Attract more customers and grow revenue with strategies that deliver measurable results."
     },
     {
       icon: Monitor,
-      title: "Web Design & Development",
+      title: "Software Design & Development",
       description: "Turning ideas into fast, user-friendly websites and apps that convert visitors into loyal customers."
     },
     {
-      icon: Zap,
+      icon: Bot,
       title: "AI & Automation Solutions",
       description: "Saving time and money by automating repetitive tasks and creating smarter workflows."
     }
