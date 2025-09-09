@@ -17,8 +17,8 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                Contact <ArrowRight className="ml-2 h-5 w-5" />
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                <a href="#contact">Contact <ArrowRight className="ml-2 h-5 w-5" /></a>
               </Button>
             </div>
 

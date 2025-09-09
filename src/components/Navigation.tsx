@@ -16,8 +16,8 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Contact
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+              <a href="#contact">Contact</a>
             </Button>
           </div>
 
@@ -34,8 +34,8 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-fit">
-                Contact
+              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground w-fit" asChild>
+                <a href="#contact">Contact</a>
               </Button>
             </div>
           </div>
