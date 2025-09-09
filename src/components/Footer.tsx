@@ -11,7 +11,6 @@ const Footer = () => {
               <span className="text-xl font-bold">Anna Kohlbecker</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-              Creating beautiful and functional digital experiences with modern design principles. 
               Let's build something amazing together.
             </p>
             <div className="flex justify-center space-x-4">
