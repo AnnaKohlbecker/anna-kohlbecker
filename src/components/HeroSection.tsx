@@ -5,7 +5,7 @@ import heroPortrait from "@/assets/hero-portrait.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-hero relative overflow-hidden">
+    <section className="min-h-screen bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="space-y-8">
