@@ -21,12 +21,6 @@ const HeroSection = () => {
               <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} fgColor="white" bgColor="black" />
               <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} fgColor="white" bgColor="black" />
             </div>
-            
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
-                <a href="#contact">Contact <ArrowRight className="ml-2 h-5 w-5" /></a>
-              </Button>
-            </div>
 
             <div className="flex items-center gap-8 pt-8">
               <div className="text-center">
@@ -37,6 +31,12 @@ const HeroSection = () => {
                 <div className="text-3xl font-bold text-primary">3+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
+            </div>
+            
+            <div className="flex flex-wrap gap-4 pt-6">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                <a href="#contact">Contact <ArrowRight className="ml-2 h-5 w-5" /></a>
+              </Button>
             </div>
           </div>
 
