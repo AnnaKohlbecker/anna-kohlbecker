@@ -19,7 +19,7 @@ const HeroSection = () => {
             
             <div className="flex justify-center lg:justify-start space-x-4 mb-6">
               <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} />
-              <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} />
+              <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} fgColor="white" bgColor="black" />
             </div>
             
             <div className="flex flex-wrap gap-4">
