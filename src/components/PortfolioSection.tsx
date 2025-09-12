@@ -27,7 +27,7 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-black">
+    <section className="min-h-screen py-20 bg-black flex items-center">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-white">
