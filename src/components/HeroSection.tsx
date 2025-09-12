@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { SocialIcon } from "react-social-icons";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 
 const HeroSection = () => {
@@ -14,6 +15,11 @@ const HeroSection = () => {
                 <br />
                 <span className="text-muted-foreground font-thin text-3xl lg:text-4xl">Entrepreneur & Developer</span>
               </h1>
+            </div>
+            
+            <div className="flex justify-center lg:justify-start space-x-4 mb-6">
+              <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} />
+              <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} />
             </div>
             
             <div className="flex flex-wrap gap-4">

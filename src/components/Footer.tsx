@@ -1,5 +1,3 @@
-import { SocialIcon } from "react-social-icons";
-
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
@@ -9,10 +7,6 @@ const Footer = () => {
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
               <span className="text-xl font-bold">Anna Kohlbecker</span>
-            </div>
-            <div className="flex justify-center space-x-4">
-              <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} />
-              <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} />
             </div>
           </div>
         </div>
