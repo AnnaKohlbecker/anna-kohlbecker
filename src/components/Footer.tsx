@@ -10,9 +10,6 @@ const Footer = () => {
             <div className="flex items-center justify-center mb-4">
               <span className="text-xl font-bold">Anna Kohlbecker</span>
             </div>
-            <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-              Let's build something amazing together.
-            </p>
             <div className="flex justify-center space-x-4">
               <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} />
               <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} />
