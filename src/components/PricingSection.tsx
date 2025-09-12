@@ -71,10 +71,10 @@ const PricingSection = () => {
             <Button 
               type="submit" 
               disabled={state.submitting}
-              className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+              className="w-full bg-accent text-accent-foreground hover:bg-accent active:bg-accent focus:bg-accent hover:shadow-none active:shadow-none focus:shadow-none transition-none"
               size="lg"
             >
-              {state.submitting ? "Sending..." : "Send Message"}
+              {state.submitting ? "Sending..." : "Send"}
             </Button>
           </form>
         </div>
