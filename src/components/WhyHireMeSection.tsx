@@ -13,11 +13,6 @@ const WhyHireMeSection = () => {
       icon: Clock,
       title: "Fast Delivery",
       description: "Quick turnaround times without compromising on quality."
-    },
-    {
-      icon: Users,
-      title: "100% Client Satisfaction",
-      description: "All my clients are happy with the results."
     }
   ];
 
