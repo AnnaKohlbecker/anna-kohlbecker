@@ -1,17 +1,8 @@
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-6 py-12">
-        <div>
-          {/* Brand */}
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
-              <span className="text-xl font-bold">Anna Kohlbecker</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
+      <div className="container mx-auto px-6 py-8">
+        <div className="text-center text-muted-foreground">
           <p>&copy; 2025 Anna Kohlbecker. All rights reserved.</p>
         </div>
       </div>
