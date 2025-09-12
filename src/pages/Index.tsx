@@ -13,9 +13,6 @@ const Index = () => {
         <section id="home">
           <HeroSection />
         </section>
-        <section id="services">
-          <ServicesSection />
-        </section>
         <section id="portfolio">
           <PortfolioSection />
         </section>
