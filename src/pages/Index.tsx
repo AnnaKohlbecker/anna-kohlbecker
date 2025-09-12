@@ -16,7 +16,6 @@ const Index = () => {
         <section id="portfolio">
           <PortfolioSection />
         </section>
-        <WhyHireMeSection />
         <section id="contact">
           <PricingSection />
         </section>
