@@ -5,55 +5,71 @@ import heroPortrait from "@/assets/hero-portrait.jpg";
 import { useState, useEffect } from "react";
 
 const HeroSection = () => {
-  const [nameText, setNameText] = useState("");
+  const [firstNameText, setFirstNameText] = useState("");
+  const [lastNameText, setLastNameText] = useState("");
   const [subtitleText, setSubtitleText] = useState("");
   const [showCursor1, setShowCursor1] = useState(true);
   const [showCursor2, setShowCursor2] = useState(false);
+  const [showCursor3, setShowCursor3] = useState(false);
   const [visibleLinks, setVisibleLinks] = useState([false, false, false]);
   
-  const fullName = "ANNA KOHLBECKER";
+  const firstName = "ANNA";
+  const lastName = "KOHLBECKER";
   const fullSubtitle = "Entrepreneur, Developer";
   
   useEffect(() => {
-    let nameIndex = 0;
+    let firstNameIndex = 0;
+    let lastNameIndex = 0;
     let subtitleIndex = 0;
     
-    // Type the name first
-    const nameTimer = setInterval(() => {
-      if (nameIndex < fullName.length) {
-        setNameText(fullName.slice(0, nameIndex + 1));
-        nameIndex++;
+    // Type the first name first
+    const firstNameTimer = setInterval(() => {
+      if (firstNameIndex < firstName.length) {
+        setFirstNameText(firstName.slice(0, firstNameIndex + 1));
+        firstNameIndex++;
       } else {
-        clearInterval(nameTimer);
+        clearInterval(firstNameTimer);
         setShowCursor1(false);
         setShowCursor2(true);
         
-        // Start typing subtitle after name is complete
-        const subtitleTimer = setInterval(() => {
-          if (subtitleIndex < fullSubtitle.length) {
-            setSubtitleText(fullSubtitle.slice(0, subtitleIndex + 1));
-            subtitleIndex++;
+        // Start typing last name after first name is complete
+        const lastNameTimer = setInterval(() => {
+          if (lastNameIndex < lastName.length) {
+            setLastNameText(lastName.slice(0, lastNameIndex + 1));
+            lastNameIndex++;
           } else {
-            clearInterval(subtitleTimer);
+            clearInterval(lastNameTimer);
             setShowCursor2(false);
+            setShowCursor3(true);
             
-            // Start showing links one by one after typing is complete
-            setTimeout(() => {
-              setVisibleLinks(prev => [true, prev[1], prev[2]]);
-              setTimeout(() => {
-                setVisibleLinks(prev => [true, true, prev[2]]);
+            // Start typing subtitle after last name is complete
+            const subtitleTimer = setInterval(() => {
+              if (subtitleIndex < fullSubtitle.length) {
+                setSubtitleText(fullSubtitle.slice(0, subtitleIndex + 1));
+                subtitleIndex++;
+              } else {
+                clearInterval(subtitleTimer);
+                setShowCursor3(false);
+                
+                // Start showing links one by one after typing is complete
                 setTimeout(() => {
-                  setVisibleLinks([true, true, true]);
+                  setVisibleLinks(prev => [true, prev[1], prev[2]]);
+                  setTimeout(() => {
+                    setVisibleLinks(prev => [true, true, prev[2]]);
+                    setTimeout(() => {
+                      setVisibleLinks([true, true, true]);
+                    }, 200);
+                  }, 200);
                 }, 300);
-              }, 300);
-            }, 500);
+              }
+            }, 60);
           }
         }, 100);
       }
-    }, 150);
+    }, 100);
     
     return () => {
-      clearInterval(nameTimer);
+      clearInterval(firstNameTimer);
     };
   }, []);
 
@@ -65,13 +81,22 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  {nameText}
-                  {showCursor1 && <span className="animate-pulse">|</span>}
+                  <span className="inline-block" style={{ minWidth: '200px' }}>
+                    {firstNameText}
+                    {showCursor1 && <span className="animate-pulse"></span>}
+                  </span>
+                  <span> </span>
+                  <span className="inline-block" style={{ minWidth: '400px' }}>
+                    {lastNameText}
+                    {showCursor2 && <span className="animate-pulse"></span>}
+                  </span>
                 </span>
                 <br />
                 <span className="text-muted-foreground font-thin text-3xl lg:text-4xl">
-                  {subtitleText}
-                  {showCursor2 && <span className="animate-pulse">|</span>}
+                  <span className="inline-block" style={{ minWidth: '500px' }}>
+                    {subtitleText}
+                    {showCursor3 && <span className="animate-pulse"></span>}
+                  </span>
                 </span>
               </h1>
             </div>
