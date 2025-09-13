@@ -3,7 +3,7 @@ import ServicesSection from "@/components/ServicesSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import WhyHireMeSection from "@/components/WhyHireMeSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import PricingSection from "@/components/PricingSection";
+import MessageSection from "@/components/MessageSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,7 +17,7 @@ const Index = () => {
           <PortfolioSection />
         </section>
         <section id="contact">
-          <PricingSection />
+          <MessageSection />
         </section>
       </main>
       <Footer />

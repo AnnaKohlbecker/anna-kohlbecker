@@ -103,30 +103,29 @@ const HeroSection = () => {
             
             <div className="flex justify-start space-x-4 mb-6">
               <div className={`transition-all duration-500 ${visibleLinks[0] ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'}`}>
-                <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} fgColor="white" bgColor="black" />
+                <div className="hover:shadow-lg hover:shadow-black/30 active:shadow-lg active:shadow-black/30 transition-shadow duration-300 rounded-full">
+                  <SocialIcon url="https://github.com/AnnaKohlbecker" style={{ height: 40, width: 40 }} fgColor="white" bgColor="black" />
+                </div>
               </div>
               <div className={`transition-all duration-500 ${visibleLinks[1] ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'}`}>
-                <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} fgColor="white" bgColor="black" />
+                <div className="hover:shadow-lg hover:shadow-black/30 active:shadow-lg active:shadow-black/30 transition-shadow duration-300 rounded-full">
+                  <SocialIcon url="https://www.linkedin.com/in/anna-kohlbecker-413761220/" style={{ height: 40, width: 40 }} fgColor="white" bgColor="black" />
+                </div>
               </div>
               <div className={`transition-all duration-500 ${visibleLinks[2] ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'}`}>
-                <a href="#contact" className="flex items-center justify-center w-10 h-10 bg-black rounded-full hover:bg-black">
+                <a href="#contact" className="flex items-center justify-center w-10 h-10 bg-black rounded-full hover:bg-black hover:shadow-lg hover:shadow-black/30 active:shadow-lg active:shadow-black/30 transition-all duration-300">
                   <Mail className="w-5 h-5 text-white" />
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="relative group max-w-md mx-auto">
+          <div className="relative max-w-xs mx-auto">
             <img 
               src={heroPortrait} 
               alt="Anna Kohlbecker - Developer" 
-              className="rounded-full object-cover w-full aspect-square"
+              className="rounded-2xl object-cover w-full aspect-[4/5]"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out">
-              <span className="text-white text-2xl font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                Hey :)
-              </span>
-            </div>
           </div>
         </div>
 

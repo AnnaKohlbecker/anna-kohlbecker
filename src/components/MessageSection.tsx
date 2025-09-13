@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useForm, ValidationError } from '@formspree/react';
 
-const PricingSection = () => {
+const MessageSection = () => {
   const [state, handleSubmit] = useForm("xqadwnpv");
   
   if (state.succeeded) {
@@ -34,7 +34,7 @@ const PricingSection = () => {
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">Email Address</Label>
+              <Label htmlFor="email">Your Email</Label>
               <Input
                 id="email"
                 type="email" 
@@ -71,7 +71,7 @@ const PricingSection = () => {
             <Button 
               type="submit" 
               disabled={state.submitting}
-              className="w-full bg-accent text-accent-foreground hover:bg-accent active:bg-accent focus:bg-accent hover:shadow-none active:shadow-none focus:shadow-none transition-none"
+              className="w-full bg-accent text-accent-foreground hover:bg-accent active:bg-accent focus:bg-accent hover:shadow-lg hover:shadow-black/30 active:shadow-lg active:shadow-black/30 transition-shadow duration-300"
               size="lg"
             >
               {state.submitting ? "Sending..." : "Send"}
@@ -83,4 +83,4 @@ const PricingSection = () => {
   );
 };
 
-export default PricingSection;
+export default MessageSection;
