@@ -77,9 +77,9 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen bg-white relative overflow-hidden">
-      <div className="container mx-auto px-6 py-20 lg:pr-0">
-        <div className="grid lg:grid-cols-4 gap-12 items-center max-w-6xl mx-auto lg:mr-0">
-          <div className="space-y-8 lg:col-span-3 lg:pr-8">
+      <div className="container mx-auto px-6 py-20">
+        <div className="grid lg:grid-cols-3 gap-12 items-center max-w-6xl mx-auto">
+          <div className="space-y-8 lg:col-span-2">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -136,11 +136,11 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="relative lg:col-span-1 lg:fixed lg:right-0 lg:top-0 lg:h-screen lg:w-[33.333vw]">
+          <div className="relative lg:col-span-1">
             <img 
               src={heroPortrait} 
               alt="Anna Kohlbecker - Developer" 
-              className="object-cover w-full h-full lg:rounded-none rounded-2xl"
+              className="rounded-2xl object-cover w-full aspect-[4/5]"
             />
           </div>
         </div>
