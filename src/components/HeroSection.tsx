@@ -78,8 +78,8 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div className="space-y-8">
+        <div className="grid lg:grid-cols-4 gap-12 items-center max-w-6xl mx-auto">
+          <div className="space-y-8 lg:col-span-3">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -136,7 +136,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="relative max-w-xs mx-auto">
+          <div className="relative max-w-xs mx-auto lg:col-span-1">
             <img 
               src={heroPortrait} 
               alt="Anna Kohlbecker - Developer" 
