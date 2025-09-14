@@ -2,20 +2,24 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm, ValidationError } from "@formspree/react";
 
 const MessageSection = () => {
   const [state, handleSubmit] = useForm("xqadwnpv");
-  
+
   if (state.succeeded) {
     return (
       <section className="min-h-screen py-20 bg-background flex items-center">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Thank You!</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Thank You!
+              </span>
             </h2>
-            <p className="text-muted-foreground">Thanks for reaching out! I'll get back to you soon.</p>
+            <p className="text-muted-foreground">
+              Thanks for reaching out! I'll get back to you soon.
+            </p>
           </div>
         </div>
       </section>
@@ -23,11 +27,13 @@ const MessageSection = () => {
   }
 
   return (
-    <section className="min-h-screen py-20 bg-background flex items-center">
+    <section className="min-h-screen bg-background flex items-center">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">Contact Me</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              CONTACT
+            </span>
           </h2>
         </div>
 
@@ -37,19 +43,19 @@ const MessageSection = () => {
               <Label htmlFor="email">Your Email</Label>
               <Input
                 id="email"
-                type="email" 
+                type="email"
                 name="email"
                 placeholder="your@email.com"
                 required
               />
-              <ValidationError 
-                prefix="Email" 
+              <ValidationError
+                prefix="Email"
                 field="email"
                 errors={state.errors}
                 className="text-destructive text-sm"
               />
             </div>
-            
+
             <div className="space-y-2">
               <Label htmlFor="message">Message</Label>
               <Textarea
@@ -60,16 +66,16 @@ const MessageSection = () => {
                 rows={5}
                 required
               />
-              <ValidationError 
-                prefix="Message" 
+              <ValidationError
+                prefix="Message"
                 field="message"
                 errors={state.errors}
                 className="text-destructive text-sm"
               />
             </div>
-            
-            <Button 
-              type="submit" 
+
+            <Button
+              type="submit"
               disabled={state.submitting}
               className="w-full bg-gray-500 text-white hover:bg-black active:bg-black focus:bg-black transition-all duration-300"
               size="lg"
