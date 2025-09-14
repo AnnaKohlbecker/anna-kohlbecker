@@ -136,7 +136,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="relative lg:col-span-1 lg:fixed lg:right-0 lg:top-0 lg:h-screen lg:w-[25vw]">
+          <div className="relative lg:col-span-1 lg:fixed lg:right-0 lg:top-0 lg:h-screen lg:w-[33.333vw]">
             <img 
               src={heroPortrait} 
               alt="Anna Kohlbecker - Developer" 
