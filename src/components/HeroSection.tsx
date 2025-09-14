@@ -136,11 +136,11 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="relative lg:col-span-1">
+          <div className="relative lg:col-span-1 h-full lg:min-h-screen">
             <img 
               src={heroPortrait} 
               alt="Anna Kohlbecker - Developer" 
-              className="rounded-2xl object-cover w-full aspect-[4/5]"
+              className="rounded-2xl object-cover w-full h-full lg:min-h-screen"
             />
           </div>
         </div>
