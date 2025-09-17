@@ -1,28 +1,15 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import logo from "@/assets/logo.png";
 
 const PortfolioSection = () => {
   const projects = [
     {
-      title: "Event Location Renting Website",
+      title: "Eventola",
       category: "Web Application",
-      image: project1,
+      image: logo,
       description: "A peer-to-peer marketplace for event location rentals.",
-    },
-    {
-      title: "...",
-      category: "Web Application",
-      image: project2,
-      description: "...",
-    },
-    {
-      title: "...",
-      category: "Web Application",
-      image: project3,
-      description: "...",
+      url: "https://eventola.de",
     },
   ];
 
@@ -33,30 +20,40 @@ const PortfolioSection = () => {
           <h2 className="text-4xl font-bold mb-4 text-white">PRODUCTS</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div
+          className={`max-w-7xl mx-auto ${
+            projects.length === 1
+              ? "flex justify-center"
+              : "grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          }`}
+        >
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gradient-card rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 group"
+              className={`bg-gradient-card rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 group flex flex-col ${
+                projects.length === 1 ? "w-80" : ""
+              }`}
             >
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  style={{ height: "120px" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-6">
                   <div className="flex gap-3">
                     <Button
                       size="sm"
                       className="bg-black text-white hover:bg-black/80"
+                      onClick={() => window.open(project.url, "_blank")}
                     >
                       <ExternalLink className="h-4 w-4" />
                     </Button>
                   </div>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex-1">
                 <div className="text-sm text-primary mb-2">
                   {project.category}
                 </div>
