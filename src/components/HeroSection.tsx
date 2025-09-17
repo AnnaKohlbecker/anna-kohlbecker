@@ -82,19 +82,19 @@ const HeroSection = () => {
           <div className="space-y-4">
             <h1 className="text-5xl lg:text-6xl font-bold">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                <span className="inline-block" style={{ minWidth: "200px" }}>
+                <span className="inline-block">
                   {firstNameText}
                   {showCursor1 && <span className="animate-pulse"></span>}
                 </span>
                 <br />
-                <span className="inline-block" style={{ minWidth: "400px" }}>
+                <span className="inline-block">
                   {lastNameText}
                   {showCursor2 && <span className="animate-pulse"></span>}
                 </span>
               </span>
               <br />
               <span className="text-muted-foreground font-thin text-3xl lg:text-4xl">
-                <span className="inline-block" style={{ minWidth: "500px" }}>
+                <span className="inline-block">
                   {subtitleText}
                   {showCursor3 && <span className="animate-pulse"></span>}
                 </span>
