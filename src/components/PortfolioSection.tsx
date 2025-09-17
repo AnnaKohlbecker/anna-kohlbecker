@@ -1,13 +1,13 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import project_1 from "@/assets/project-1.png";
+import eventola from "@/assets/eventola.png";
 
 const PortfolioSection = () => {
   const projects = [
     {
       title: "Eventola",
       category: "Web Application",
-      image: project_1,
+      image: eventola,
       description: "A peer-to-peer marketplace for event location rentals.",
       url: "https://eventola.de",
     },
