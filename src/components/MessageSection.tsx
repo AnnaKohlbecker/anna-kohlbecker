@@ -77,7 +77,7 @@ const MessageSection = () => {
             <Button
               type="submit"
               disabled={state.submitting}
-              className="w-full bg-gray-500 text-white hover:bg-black active:bg-black focus:bg-black transition-all duration-300"
+              className="w-full bg-transparent border-2 border-black text-black hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white transition-all duration-300"
               size="lg"
             >
               {state.submitting ? "Sending..." : "Send"}

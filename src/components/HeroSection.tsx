@@ -110,12 +110,12 @@ const HeroSection = () => {
                   : "opacity-0 transform translate-y-4"
               }`}
             >
-              <div className="rounded-full">
+              <div className="rounded-full border-2 border-black bg-transparent hover:bg-black transition-all duration-300 group">
                 <SocialIcon
                   url="https://github.com/AnnaKohlbecker"
-                  style={{ height: 40, width: 40 }}
-                  fgColor="white"
-                  bgColor={githubHover ? "black" : "#6b7280"}
+                  style={{ height: 36, width: 36 }}
+                  fgColor={githubHover ? "white" : "black"}
+                  bgColor="transparent"
                   onMouseEnter={() => setGithubHover(true)}
                   onMouseLeave={() => setGithubHover(false)}
                 />
@@ -128,12 +128,12 @@ const HeroSection = () => {
                   : "opacity-0 transform translate-y-4"
               }`}
             >
-              <div className="rounded-full">
+              <div className="rounded-full border-2 border-black bg-transparent hover:bg-black transition-all duration-300 group">
                 <SocialIcon
                   url="https://www.linkedin.com/in/anna-kohlbecker-413761220/"
-                  style={{ height: 40, width: 40 }}
-                  fgColor="white"
-                  bgColor={linkedinHover ? "black" : "#6b7280"}
+                  style={{ height: 36, width: 36 }}
+                  fgColor={linkedinHover ? "white" : "black"}
+                  bgColor="transparent"
                   onMouseEnter={() => setLinkedinHover(true)}
                   onMouseLeave={() => setLinkedinHover(false)}
                 />
@@ -148,9 +148,9 @@ const HeroSection = () => {
             >
               <a
                 href="#contact"
-                className="flex items-center justify-center w-10 h-10 bg-gray-500 rounded-full hover:bg-black active:bg-black transition-all duration-300"
+                className="flex items-center justify-center w-10 h-10 bg-transparent border-2 border-black rounded-full hover:bg-black active:bg-black transition-all duration-300 group"
               >
-                <Mail className="w-5 h-5 text-white" />
+                <Mail className="w-5 h-5 text-black group-hover:text-white group-active:text-white" />
               </a>
             </div>
           </div>
