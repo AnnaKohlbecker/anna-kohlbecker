@@ -11,7 +11,13 @@ const HeroSection = () => {
   const [showCursor1, setShowCursor1] = useState(true);
   const [showCursor2, setShowCursor2] = useState(false);
   const [showCursor3, setShowCursor3] = useState(false);
-  const [visibleLinks, setVisibleLinks] = useState([false, false, false]);
+  const [visibleLinks, setVisibleLinks] = useState([
+    false,
+    false,
+    false,
+    false,
+  ]);
+  const [xHover, setXHover] = useState(false);
   const [githubHover, setGithubHover] = useState(false);
   const [linkedinHover, setLinkedinHover] = useState(false);
 
@@ -55,11 +61,14 @@ const HeroSection = () => {
 
                 // Start showing links one by one after typing is complete
                 setTimeout(() => {
-                  setVisibleLinks((prev) => [true, prev[1], prev[2]]);
+                  setVisibleLinks((prev) => [true, prev[1], prev[2], prev[3]]);
                   setTimeout(() => {
-                    setVisibleLinks((prev) => [true, true, prev[2]]);
+                    setVisibleLinks((prev) => [true, true, prev[2], prev[3]]);
                     setTimeout(() => {
-                      setVisibleLinks([true, true, true]);
+                      setVisibleLinks((prev) => [true, true, true, prev[3]]);
+                      setTimeout(() => {
+                        setVisibleLinks([true, true, true, true]);
+                      }, 200);
                     }, 200);
                   }, 200);
                 }, 300);
@@ -112,6 +121,24 @@ const HeroSection = () => {
             >
               <div className="rounded-full bg-white hover:bg-black transition-all duration-300 group shadow-lg hover:shadow-glow">
                 <SocialIcon
+                  url="https://x.com/Anna_Kohlbecker"
+                  style={{ height: 36, width: 36 }}
+                  fgColor={xHover ? "white" : "black"}
+                  bgColor="transparent"
+                  onMouseEnter={() => setXHover(true)}
+                  onMouseLeave={() => setXHover(false)}
+                />
+              </div>
+            </div>
+            <div
+              className={`transition-all duration-500 ${
+                visibleLinks[1]
+                  ? "opacity-100 transform translate-y-0"
+                  : "opacity-0 transform translate-y-4"
+              }`}
+            >
+              <div className="rounded-full bg-white hover:bg-black transition-all duration-300 group shadow-lg hover:shadow-glow">
+                <SocialIcon
                   url="https://github.com/AnnaKohlbecker"
                   style={{ height: 36, width: 36 }}
                   fgColor={githubHover ? "white" : "black"}
@@ -123,7 +150,7 @@ const HeroSection = () => {
             </div>
             <div
               className={`transition-all duration-500 ${
-                visibleLinks[1]
+                visibleLinks[2]
                   ? "opacity-100 transform translate-y-0"
                   : "opacity-0 transform translate-y-4"
               }`}
@@ -141,7 +168,7 @@ const HeroSection = () => {
             </div>
             <div
               className={`transition-all duration-500 ${
-                visibleLinks[2]
+                visibleLinks[3]
                   ? "opacity-100 transform translate-y-0"
                   : "opacity-0 transform translate-y-4"
               }`}
