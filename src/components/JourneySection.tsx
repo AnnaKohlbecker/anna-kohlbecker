@@ -75,7 +75,7 @@ const JourneySection = () => {
                   <div className="flex-1">
                     <div className="p-6">
                       <div className="flex flex-wrap items-center mb-3 gap-3">
-                        <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1 whitespace-nowrap">
+                        <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1">
                           <Calendar className="h-3 w-3" />
                           {step.year}
                         </span>
@@ -83,10 +83,10 @@ const JourneySection = () => {
                           step.organization.map((org, orgIndex) => (
                             <span
                               key={orgIndex}
-                              className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1 whitespace-nowrap"
+                              className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1 break-words"
                             >
                               <Building2 className="h-3 w-3" />
-                              {org}
+                              <span className="break-words">{org}</span>
                             </span>
                           ))}
                       </div>
