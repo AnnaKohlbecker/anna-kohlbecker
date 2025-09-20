@@ -55,7 +55,7 @@ const JourneySection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-black hidden md:block"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-black border-l-2 border-dotted border-black bg-transparent"></div>
 
             <div className="space-y-12">
               {journeySteps.map((step, index) => (
@@ -64,10 +64,10 @@ const JourneySection = () => {
                   className="relative flex items-start space-x-6"
                 >
                   {/* Timeline dot */}
-                  <div className="hidden md:block absolute left-6 w-4 h-4 bg-black rounded-full border-4 border-background"></div>
+                  <div className="absolute left-6 w-4 h-4 bg-black rounded-full border-4 border-background"></div>
 
                   {/* Icon */}
-                  <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center flex-shrink-0 md:ml-12">
+                  <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center flex-shrink-0 ml-12">
                     <step.icon className="h-8 w-8 text-white" />
                   </div>
 
