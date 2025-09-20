@@ -40,7 +40,7 @@ const JourneySection = () => {
     {
       icon: BriefcaseBusiness,
       year: "2025 - Present",
-      title: "Agency & SaaS",
+      title: "Agency Service & SaaS Products",
       description: ["Eventola"],
     },
   ];
@@ -74,8 +74,8 @@ const JourneySection = () => {
                   {/* Content */}
                   <div className="flex-1">
                     <div className="p-6">
-                      <div className="flex items-center mb-3 gap-3">
-                        <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1">
+                      <div className="flex flex-wrap items-center mb-3 gap-3">
+                        <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1 whitespace-nowrap">
                           <Calendar className="h-3 w-3" />
                           {step.year}
                         </span>
@@ -83,7 +83,7 @@ const JourneySection = () => {
                           step.organization.map((org, orgIndex) => (
                             <span
                               key={orgIndex}
-                              className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1"
+                              className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1 whitespace-nowrap"
                             >
                               <Building2 className="h-3 w-3" />
                               {org}
