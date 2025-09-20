@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import PortfolioSection from "@/components/PortfolioSection";
-import MessageSection from "@/components/MessageSection";
+import ContactSection from "@/components/ContactSection";
 import JourneySection from "@/components/JourneySection";
 import Footer from "@/components/Footer";
 
@@ -21,7 +21,7 @@ const Index = () => {
         </section>
         <div className="w-3/4 h-px bg-gray mx-auto"></div>
         <section id="contact">
-          <MessageSection />
+          <ContactSection />
         </section>
       </main>
       <div className="w-3/4 h-px bg-gray mx-auto"></div>

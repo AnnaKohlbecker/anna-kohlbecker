@@ -17,7 +17,7 @@ const PortfolioSection = () => {
     <section className="min-h-screen py-20 text-black flex items-center">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-black">PRODUCTS</h2>
+          <h2 className="text-4xl font-bold mb-4 text-black">PORTFOLIO</h2>
         </div>
 
         <div

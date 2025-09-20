@@ -110,7 +110,7 @@ const HeroSection = () => {
                   : "opacity-0 transform translate-y-4"
               }`}
             >
-              <div className="rounded-full bg-white hover:bg-black transition-all duration-300 group shadow-md hover:shadow-xl">
+              <div className="rounded-full bg-white hover:bg-black transition-all duration-300 group shadow-lg hover:shadow-glow">
                 <SocialIcon
                   url="https://github.com/AnnaKohlbecker"
                   style={{ height: 36, width: 36 }}
@@ -128,7 +128,7 @@ const HeroSection = () => {
                   : "opacity-0 transform translate-y-4"
               }`}
             >
-              <div className="rounded-full bg-white hover:bg-black transition-all duration-300 group shadow-md hover:shadow-xl">
+              <div className="rounded-full bg-white hover:bg-black transition-all duration-300 group shadow-lg hover:shadow-glow">
                 <SocialIcon
                   url="https://www.linkedin.com/in/anna-kohlbecker-413761220/"
                   style={{ height: 36, width: 36 }}
@@ -148,7 +148,7 @@ const HeroSection = () => {
             >
               <a
                 href="#contact"
-                className="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-black active:bg-black transition-all duration-300 group shadow-md hover:shadow-xl"
+                className="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-black active:bg-black transition-all duration-300 group shadow-lg hover:shadow-glow"
               >
                 <Mail className="w-5 h-5 text-black group-hover:text-white group-active:text-white" />
               </a>

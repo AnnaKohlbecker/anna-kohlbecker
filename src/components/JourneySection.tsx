@@ -1,24 +1,47 @@
-import { MapPin, Calendar, Trophy, GraduationCap } from "lucide-react";
+import {
+  MapPin,
+  Calendar,
+  Trophy,
+  GraduationCap,
+  Building2,
+  BriefcaseBusiness,
+} from "lucide-react";
 
 const JourneySection = () => {
   const journeySteps = [
     {
       icon: GraduationCap,
       year: "2012 - 2021",
-      title: "Secondary Education with Diploma (Gauß Gymnasium)",
-      description: "",
+      organization: ["Gauß Gymnasium Worms, Germany"],
+      title: "Diploma & Projects",
+      description: ["Python Course", "Robotics Club"],
     },
     {
       icon: GraduationCap,
       year: "2022 - 2025",
-      title: "Studies & Projects (DHBW Lörrach & Roche Diagnostics)",
-      description: "",
+      organization: [
+        "DHBW Lörrach, Germany",
+        "Roche Diagnostics Mannheim, Germany",
+      ],
+      title: "Computer Science B. Sc., Work & Projects",
+      description: [
+        "Project Management",
+        "Website Development",
+        "App Development",
+        "Low Code Development",
+        "AI Integration",
+        "Data Management",
+        "Software Quality Assurance",
+        "API Integration",
+        "DevOps",
+        "Cybersecurity Basics",
+      ],
     },
     {
-      icon: MapPin,
-      year: "2025",
-      title: "Building & Scaling",
-      description: "",
+      icon: BriefcaseBusiness,
+      year: "2025 - Present",
+      title: "Agency & SaaS",
+      description: ["Eventola"],
     },
   ];
 
@@ -50,16 +73,31 @@ const JourneySection = () => {
 
                   {/* Content */}
                   <div className="flex-1">
-                    <div className="bg-white rounded-2xl p-6 shadow-card hover:shadow-glow transition-all duration-300">
-                      <div className="flex items-center mb-3">
-                        <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    <div className="p-6">
+                      <div className="flex items-center mb-3 gap-3">
+                        <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1">
+                          <Calendar className="h-3 w-3" />
                           {step.year}
                         </span>
+                        {step.organization &&
+                          step.organization.map((org, orgIndex) => (
+                            <span
+                              key={orgIndex}
+                              className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1"
+                            >
+                              <Building2 className="h-3 w-3" />
+                              {org}
+                            </span>
+                          ))}
                       </div>
                       <h3 className="text-2xl font-bold mb-3">{step.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {step.description}
-                      </p>
+                      {step.description && step.description.length > 0 && (
+                        <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
+                          {step.description.map((desc, descIndex) => (
+                            <li key={descIndex}>{desc}</li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </div>
                 </div>

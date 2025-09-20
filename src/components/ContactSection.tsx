@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useForm, ValidationError } from "@formspree/react";
 
-const MessageSection = () => {
+const ContactSection = () => {
   const [state, handleSubmit] = useForm("xqadwnpv");
 
   if (state.succeeded) {
@@ -30,7 +30,7 @@ const MessageSection = () => {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-8">
             <div className="space-y-2">
               <Label htmlFor="email" className="text-black">
                 Your Email
@@ -40,7 +40,7 @@ const MessageSection = () => {
                 type="email"
                 name="email"
                 placeholder="your@email.com"
-                className="border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-gray-500"
                 required
               />
               <ValidationError
@@ -59,7 +59,7 @@ const MessageSection = () => {
                 id="message"
                 name="message"
                 placeholder="Your message..."
-                className="min-h-[120px] resize-none border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="min-h-[120px] resize-none border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-gray-500"
                 rows={5}
                 required
               />
@@ -74,7 +74,7 @@ const MessageSection = () => {
             <Button
               type="submit"
               disabled={state.submitting}
-              className="w-full bg-black border border-black text-white hover:bg-gray hover:border-gray active:bg-gray active:border-gray focus:bg-gray focus:border-gray transition-all duration-300"
+              className="w-full bg-white text-black hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white transition-all duration-300 shadow-lg hover:shadow-glow"
               size="lg"
             >
               {state.submitting ? "Sending..." : "Send"}
@@ -86,4 +86,4 @@ const MessageSection = () => {
   );
 };
 
-export default MessageSection;
+export default ContactSection;
