@@ -59,20 +59,14 @@ const JourneySection = () => {
 
             <div className="space-y-12">
               {journeySteps.map((step, index) => (
-                <div
-                  key={index}
-                  className="relative flex items-start space-x-6"
-                >
-                  {/* Timeline dot */}
-                  <div className="absolute left-6 w-4 h-4 bg-black rounded-full border-4 border-background"></div>
-
-                  {/* Icon */}
-                  <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center flex-shrink-0 ml-12">
-                    <step.icon className="h-8 w-8 text-white" />
+                <div key={index} className="relative">
+                  {/* Icon positioned on timeline */}
+                  <div className="absolute left-2 w-12 h-12 bg-black rounded-xl flex items-center justify-center flex-shrink-0 z-10">
+                    <step.icon className="h-6 w-6 text-white" />
                   </div>
 
                   {/* Content */}
-                  <div className="flex-1">
+                  <div className="ml-20">
                     <div className="p-6">
                       <div className="flex flex-wrap items-center mb-3 gap-3">
                         <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1">
