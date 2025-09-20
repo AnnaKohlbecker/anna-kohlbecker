@@ -1,25 +1,30 @@
 import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
 import PortfolioSection from "@/components/PortfolioSection";
-import WhyHireMeSection from "@/components/WhyHireMeSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import MessageSection from "@/components/MessageSection";
+import JourneySection from "@/components/JourneySection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-lightgray">
       <main>
         <section id="home">
           <HeroSection />
         </section>
+        <div className="w-3/4 h-px bg-gray mx-auto"></div>
         <section id="portfolio">
           <PortfolioSection />
         </section>
+        <div className="w-3/4 h-px bg-gray mx-auto"></div>
+        <section id="journey">
+          <JourneySection />
+        </section>
+        <div className="w-3/4 h-px bg-gray mx-auto"></div>
         <section id="contact">
           <MessageSection />
         </section>
       </main>
+      <div className="w-3/4 h-px bg-gray mx-auto"></div>
       <Footer />
     </div>
   );

@@ -9,15 +9,11 @@ const MessageSection = () => {
 
   if (state.succeeded) {
     return (
-      <section className="min-h-screen py-20 bg-background flex items-center">
+      <section className="min-h-screen py-20 text-black flex items-center">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Thank You!
-              </span>
-            </h2>
-            <p className="text-muted-foreground">
+            <h2 className="text-4xl font-bold mb-4 text-black">Thank You!</h2>
+            <p className="text-black">
               Thanks for reaching out! I'll get back to you soon.
             </p>
           </div>
@@ -27,25 +23,24 @@ const MessageSection = () => {
   }
 
   return (
-    <section className="min-h-screen bg-background flex items-center">
+    <section className="min-h-screen text-black flex items-center">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              CONTACT
-            </span>
-          </h2>
+          <h2 className="text-4xl font-bold mb-4 text-black">CONTACT</h2>
         </div>
 
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">Your Email</Label>
+              <Label htmlFor="email" className="text-black">
+                Your Email
+              </Label>
               <Input
                 id="email"
                 type="email"
                 name="email"
                 placeholder="your@email.com"
+                className="border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
                 required
               />
               <ValidationError
@@ -57,12 +52,14 @@ const MessageSection = () => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
+              <Label htmlFor="message" className="text-black">
+                Message
+              </Label>
               <Textarea
                 id="message"
                 name="message"
                 placeholder="Your message..."
-                className="min-h-[120px] resize-none"
+                className="min-h-[120px] resize-none border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
                 rows={5}
                 required
               />
@@ -77,7 +74,7 @@ const MessageSection = () => {
             <Button
               type="submit"
               disabled={state.submitting}
-              className="w-full bg-transparent border-2 border-black text-black hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white transition-all duration-300"
+              className="w-full bg-black border border-black text-white hover:bg-gray hover:border-gray active:bg-gray active:border-gray focus:bg-gray focus:border-gray transition-all duration-300"
               size="lg"
             >
               {state.submitting ? "Sending..." : "Send"}

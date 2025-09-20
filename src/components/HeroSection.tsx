@@ -76,12 +76,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen container mx-auto px-6">
+    <section className="min-h-screen text-black container mx-auto px-6">
       <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto min-h-screen items-center">
         <div className="min-h-screen space-y-8 lg:col-span-2 flex flex-col justify-center">
           <div className="space-y-4">
             <h1 className="text-5xl lg:text-6xl font-bold">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="text-black">
                 <span className="inline-block">
                   {firstNameText}
                   {showCursor1 && <span className="animate-pulse"></span>}
@@ -93,7 +93,7 @@ const HeroSection = () => {
                 </span>
               </span>
               <br />
-              <span className="text-muted-foreground font-thin text-3xl lg:text-4xl">
+              <span className="text-gray font-thin text-3xl lg:text-4xl">
                 <span className="inline-block">
                   {subtitleText}
                   {showCursor3 && <span className="animate-pulse"></span>}
@@ -110,7 +110,7 @@ const HeroSection = () => {
                   : "opacity-0 transform translate-y-4"
               }`}
             >
-              <div className="rounded-full border-2 border-black bg-transparent hover:bg-black transition-all duration-300 group">
+              <div className="rounded-full bg-white hover:bg-black transition-all duration-300 group shadow-md hover:shadow-xl">
                 <SocialIcon
                   url="https://github.com/AnnaKohlbecker"
                   style={{ height: 36, width: 36 }}
@@ -128,7 +128,7 @@ const HeroSection = () => {
                   : "opacity-0 transform translate-y-4"
               }`}
             >
-              <div className="rounded-full border-2 border-black bg-transparent hover:bg-black transition-all duration-300 group">
+              <div className="rounded-full bg-white hover:bg-black transition-all duration-300 group shadow-md hover:shadow-xl">
                 <SocialIcon
                   url="https://www.linkedin.com/in/anna-kohlbecker-413761220/"
                   style={{ height: 36, width: 36 }}
@@ -148,7 +148,7 @@ const HeroSection = () => {
             >
               <a
                 href="#contact"
-                className="flex items-center justify-center w-10 h-10 bg-transparent border-2 border-black rounded-full hover:bg-black active:bg-black transition-all duration-300 group"
+                className="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-black active:bg-black transition-all duration-300 group shadow-md hover:shadow-xl"
               >
                 <Mail className="w-5 h-5 text-black group-hover:text-white group-active:text-white" />
               </a>
