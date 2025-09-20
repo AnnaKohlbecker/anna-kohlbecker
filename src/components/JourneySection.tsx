@@ -70,7 +70,7 @@ const JourneySection = () => {
                     <div className="p-6">
                       <div className="flex flex-wrap items-center mb-3 gap-3">
                         <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1">
-                          <Calendar className="h-3 w-3" />
+                          <Calendar className="h-3 w-3 flex-shrink-0" />
                           {step.year}
                         </span>
                         {step.organization &&
@@ -79,7 +79,7 @@ const JourneySection = () => {
                               key={orgIndex}
                               className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full flex items-center gap-1 break-words"
                             >
-                              <Building2 className="h-3 w-3" />
+                              <Building2 className="h-3 w-3 flex-shrink-0" />
                               <span className="break-words">{org}</span>
                             </span>
                           ))}
