@@ -1,6 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import eventola from "@/assets/eventola.png";
+import blinkforge from "@/assets/blinkforge.png";
 
 const PortfolioSection = () => {
   const projects = [
@@ -10,6 +11,14 @@ const PortfolioSection = () => {
       image: eventola,
       description: "A peer-to-peer marketplace for event location rentals.",
       url: "https://eventola.de",
+    },
+    {
+      title: "BlinkForge",
+      category: "Agency",
+      image: blinkforge,
+      description:
+        "A web development agency specializing in conversion-first websites.",
+      url: "https://blinkforge.co",
     },
   ];
 
@@ -21,18 +30,16 @@ const PortfolioSection = () => {
         </div>
 
         <div
-          className={`max-w-7xl mx-auto ${
-            projects.length === 1
-              ? "flex justify-center"
-              : "grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className={`max-w-5xl mx-auto ${
+            projects.length % 2 === 0
+              ? "grid grid-cols-1 md:grid-cols-2 gap-8 px-12"
+              : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           }`}
         >
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 group flex flex-col ${
-                projects.length === 1 ? "w-80" : ""
-              }`}
+              className="bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 group flex flex-col"
             >
               <div className="relative overflow-hidden">
                 <img

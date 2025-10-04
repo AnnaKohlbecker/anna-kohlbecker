@@ -41,7 +41,7 @@ const JourneySection = () => {
       icon: BriefcaseBusiness,
       year: "2025 - Present",
       title: "Agency Service & SaaS Products",
-      description: ["Eventola"],
+      description: ["Eventola", "BlinkForge"],
     },
   ];
 
