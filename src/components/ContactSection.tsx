@@ -16,7 +16,7 @@ const ContactSection = () => {
 
         <div className="max-w-2xl mx-auto">
           {state.succeeded ? (
-            <div className="text-center">
+            <div className="text-center flex items-center justify-center min-h-[400px]">
               <p className="text-black">
                 Thanks for reaching out! I'll get back to you soon.
               </p>
