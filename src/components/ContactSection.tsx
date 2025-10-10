@@ -31,6 +31,11 @@ const ContactSection = () => {
 
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-8">
+            <input
+              type="hidden"
+              name="_subject"
+              value="AnnaKohlbecker New Message"
+            />
             <div className="space-y-2">
               <Label htmlFor="email" className="text-black">
                 Your Email
