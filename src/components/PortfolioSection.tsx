@@ -30,9 +30,9 @@ const PortfolioSection = () => {
         </div>
 
         <div
-          className={`max-w-5xl mx-auto ${
+          className={`mx-auto ${
             projects.length % 2 === 0
-              ? "grid grid-cols-1 md:grid-cols-2 gap-8 px-12"
+              ? "grid grid-cols-1 md:grid-cols-2 gap-8"
               : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           }`}
         >

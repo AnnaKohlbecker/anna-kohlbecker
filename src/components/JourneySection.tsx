@@ -52,7 +52,7 @@ const JourneySection = () => {
           <h2 className="text-4xl font-bold mb-4 text-black">JOURNEY</h2>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="mx-auto">
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-black border-l-2 border-dotted border-black bg-transparent"></div>

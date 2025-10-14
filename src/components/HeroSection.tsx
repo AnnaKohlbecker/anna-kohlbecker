@@ -85,7 +85,7 @@ const HeroSection = () => {
 
   return (
     <section className="text-black container mx-auto">
-      <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto min-h-screen items-center">
+      <div className="grid lg:grid-cols-3 gap-12 mx-auto min-h-screen items-center">
         <div className="min-h-screen space-y-8 lg:col-span-2 flex flex-col justify-center">
           <div className="space-y-4">
             <h1 className="text-5xl lg:text-6xl font-bold">
