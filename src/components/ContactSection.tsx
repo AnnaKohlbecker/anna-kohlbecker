@@ -8,7 +8,7 @@ const ContactSection = () => {
   const [state, handleSubmit] = useForm("xqadwnpv");
 
   return (
-    <section className="text-black container mx-auto">
+    <section className="text-black container mx-auto py-0 my-0">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold mb-4 text-black">CONTACT</h2>
       </div>
@@ -29,14 +29,14 @@ const ContactSection = () => {
             />
             <div className="space-y-2">
               <Label htmlFor="email" className="text-black">
-                Your Email
+                From:
               </Label>
               <Input
                 id="email"
                 type="email"
                 name="email"
                 placeholder="your@email.com"
-                className="border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-gray-500"
+                className="border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-gray"
                 required
               />
               <ValidationError
@@ -49,13 +49,13 @@ const ContactSection = () => {
 
             <div className="space-y-2">
               <Label htmlFor="message" className="text-black">
-                Message
+                Message:
               </Label>
               <Textarea
                 id="message"
                 name="message"
                 placeholder="Your message..."
-                className="min-h-[120px] resize-none border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-gray-500"
+                className="min-h-[120px] resize-none border-0 focus:border-0 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-gray"
                 rows={5}
                 required
               />

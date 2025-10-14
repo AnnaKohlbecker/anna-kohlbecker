@@ -84,9 +84,9 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="text-black container mx-auto">
-      <div className="grid lg:grid-cols-3 gap-12 mx-auto min-h-screen items-center">
-        <div className="min-h-screen space-y-8 lg:col-span-2 flex flex-col justify-center">
+    <section className="text-black container mx-auto py-0 my-0">
+      <div className="grid lg:grid-cols-3 gap-12 mx-auto items-center">
+        <div className="space-y-8 lg:col-span-2 flex flex-col justify-center">
           <div className="space-y-4">
             <h1 className="text-5xl lg:text-6xl font-bold">
               <span className="text-black">
@@ -182,7 +182,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="min-h-screen relative lg:col-span-1 flex items-center justify-center">
+        <div className="relative lg:col-span-1 flex items-center justify-center">
           <img
             src={heroPortrait}
             alt="Anna Kohlbecker - Developer"

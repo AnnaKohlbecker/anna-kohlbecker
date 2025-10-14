@@ -9,20 +9,22 @@ const Index = () => {
     <div className="min-h-screen bg-bg flex justify-center items-stretch">
       <div className="min-h-screen flex flex-col max-w-4xl w-full border-x border-gray">
         <main className="flex-1">
-          <section id="home">
+          <section id="home" className="mt-64">
             <HeroSection />
           </section>
-          <section id="portfolio">
+          <section id="portfolio" className="mt-64">
             <PortfolioSection />
           </section>
-          <section id="journey">
+          <section id="journey" className="mt-64">
             <JourneySection />
           </section>
-          <section id="contact">
+          <section id="contact" className="mt-64">
             <ContactSection />
           </section>
         </main>
-        <Footer />
+        <div className="mt-64">
+          <Footer />
+        </div>
       </div>
     </div>
   );

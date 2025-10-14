@@ -23,7 +23,7 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section className="py-20 text-black flex items-center">
+    <section className="text-black flex items-center py-0 my-0">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-black">PORTFOLIO</h2>
