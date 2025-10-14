@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { SocialIcon } from "react-social-icons";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import { useState, useEffect } from "react";
@@ -85,7 +84,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen text-black container mx-auto px-6">
+    <section className="text-black container mx-auto">
       <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto min-h-screen items-center">
         <div className="min-h-screen space-y-8 lg:col-span-2 flex flex-col justify-center">
           <div className="space-y-4">

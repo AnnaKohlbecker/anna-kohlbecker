@@ -68,8 +68,8 @@ export default {
         // Custom colors for the three-color scheme
         black: "#000000",
         white: "#ffffff",
-        gray: "#979797",
-        lightgray: "#f0f0f2",
+        gray: "#b1b1b1ff",
+        bg: "#f0f0f2",
       },
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",
