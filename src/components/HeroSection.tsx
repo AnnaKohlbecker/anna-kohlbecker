@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import { SocialIcon } from "react-social-icons";
+import CustomSection from "@/components/CustomSection";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import { useState, useEffect } from "react";
 
@@ -84,7 +85,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="text-black container mx-auto py-0 my-0">
+    <CustomSection>
       <div className="grid lg:grid-cols-3 gap-12 mx-auto items-center">
         <div className="space-y-8 lg:col-span-2 flex flex-col justify-center">
           <div className="space-y-4">
@@ -190,7 +191,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-    </section>
+    </CustomSection>
   );
 };
 

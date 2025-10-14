@@ -2,17 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import CustomSection from "@/components/CustomSection";
 import { useForm, ValidationError } from "@formspree/react";
 
 const ContactSection = () => {
   const [state, handleSubmit] = useForm("xqadwnpv");
 
   return (
-    <section className="text-black container mx-auto py-0 my-0">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4 text-black">CONTACT</h2>
-      </div>
-
+    <CustomSection title="CONTACT">
       <div className="mx-auto">
         {state.succeeded ? (
           <div className="text-center flex items-center justify-center min-h-[400px]">
@@ -78,7 +75,7 @@ const ContactSection = () => {
           </form>
         )}
       </div>
-    </section>
+    </CustomSection>
   );
 };
 
