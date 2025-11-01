@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import VideoSection from "@/components/VideoSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import ContactSection from "@/components/ContactSection";
 import JourneySection from "@/components/JourneySection";
@@ -11,6 +12,9 @@ const Index = () => {
         <main className="flex-1">
           <section id="home">
             <HeroSection />
+          </section>
+          <section id="video">
+            <VideoSection />
           </section>
           <section id="portfolio">
             <PortfolioSection />
